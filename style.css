@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 164px 165px 164px 165px;
+    background-color: #ECF2F8;
+
+}
+
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "one one two three"
+        "four  five five three"
+    ;
+    gap: 20px;
+}
+
+.box1 {
+    grid-area: one;
+    background-color: #733FC8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 32px 32px 32px;
+}
+
+.box2 {
+    grid-area: two;
+    background-color: #48556A;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 32px 32px 32px;
+}
+
+.box3 {
+    grid-area: three;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 32px 32px 32px;
+}
+
+.box4 {
+    grid-area: four;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 32px 32px 32px;
+}
+
+.box5 {
+    grid-area: five;
+    background-color: #19202D;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 32px 32px 32px;
+}
+
+.starter1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.name1 {
+    font-size: 13px;
+    color: white;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.name2 {
+    font-size: 11px;
+    color: white;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.text1 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.text2 {
+    font-size: 13px;
+    color: #CFCFCF;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.name3 {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.name4 {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.text3 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text4 {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.name5 {
+    color: #48556A;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.name6 {
+    color: #48556A;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.text5 {
+    color: #48556A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text6 {
+    color: #48556A;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.name7 {
+    color: #48556A;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.name8 {
+    color: #48556A;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.text7 {
+    color: #48556A;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text8 {
+    color: #48556A;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+.name9 {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.name10 {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 11px;
+    opacity: 0.5;
+}
+
+.text9 {
+    color: #ECF2F8;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text10 {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+        ;
+    }
+}
